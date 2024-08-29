@@ -19,6 +19,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
  
     <title>Portfolio website</title>
  
@@ -40,17 +43,17 @@
  
             <ul class="cabeçalho-link">
  
-                <li><a href="#home">Home</a></li>
+                <li><a href="#home" class="scroll-link">Home</a></li>
  
-                <li><a href="#sobre-mim">Sobre Mim</a></li>
+                <li><a href="#sobre-mim" class="scroll-link">Sobre Mim</a></li>
  
-                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#habilidades" class="scroll-link">Habilidades</a></li>
  
-                <li><a href="#projetos">Projetos</a></li>
+                <li> <a href="#experiencia-profissional" class="scroll-link">Experiência Profissional</a></li>
  
-                <li> <a href="#Redes Sociais">Redes Sociais</a></li>
- 
-                <li><a href="https://wa.me/61985123885">Contato</a></li>
+                <li><a href="#projetos" class="scroll-link">Projetos</a></li>
+
+                <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGMvkNkgLGxPBcJwvprRxhKvHmRNxSkMScLhqqQSzhVjSnFRbFtdZXnXrpHSbGlqMmQlgzj">Contato</a></li>
  
             </ul>
  
@@ -126,7 +129,7 @@
  
                     <p>Front-End | Back-End | Infraestrutura | Segurança da Informação | Business Intelligence | Cybersecurity.</p>
  
-                    <button type="button">Saiba mais</button>
+                    <a href="https://www.linkedin.com/in/marcus-vinicius-503a32226/"><button type="button">Saiba mais</button></a>
  
                 </div>
  
@@ -167,6 +170,46 @@
         </div>
  
     </div>
+
+    <div class="Container-serviços" id="experiencia-profissional">
+        <div class="title">
+            <h2>Experiência <span>Profissional</span></h2>
+        </div>
+        <div class="Caixa">
+            <div class="Card">
+                <i class="fas fa-briefcase"></i>
+                <h5>Estagiário TI - Segurança/Infraestrutura</h5>
+                <div class="Paragrafo-button">
+                    <p><strong>Empresa:</strong> Ministério do Meio Ambiente</p>
+                    <p><strong>Período:</strong> Agosto 2024 - Presente</p>
+                    <div class="Experiencia-descricao">
+                        <p><strong>Responsabilidades:</strong></p>
+                        <ul>
+                            <li>
+                                Acompanhar apresentações técnicas de soluções de segurança da informação e infraestrutura de TI. Participar do planejamento, dimensionamento e implantação de soluções de segurança da informação e infraestrutura de TI. Acompanhar e apoiar demonstrações e provas de conceito de soluções de segurança da informação e infraestrutura de TI. Acompanhar e apoiar atividades de consultoria em segurança da informação, análise de vulnerabilidades e ataques. Acompanhar a avaliação de ambientes de clientes buscando oportunidades de melhorias e evolução tecnológica. Acompanhar o desenvolvimento de projetos de segurança da informação e infraestrutura de TI para a definição de produtos e/ou serviços adequados às necessidades dos clientes. Analisar problemas e propor soluções técnicas relacionadas a sistemas de segurança e infraestrutura de TI. Dialogar com profissionais de TI e usuários. Atuar em parceria com servidores, gestores, administradores e integrantes dos times de operação na área de segurança e infraestrutura de TI. Executar atividades administrativas, incluindo consulta, classificação e verificação de processos do Serviço de Eletrônico de Informações - SEI do MMA, elaboração de minutas de despachos, ofícios e notas técnicas, abertura e acompanhamento de chamados técnicos no sistema OTRS, e auxílio na elaboração de planilhas, atas de reunião, relatórios técnicos e administrativos, entre outros.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="Card">
+                <i class="fas fa-briefcase"></i>
+                <h5>Estagiário Gestão de Pessoas</h5>
+                <div class="Paragrafo-button">
+                    <p><strong>Empresa:</strong> FUNPRESP-JUD</p>
+                    <p><strong>Período:</strong> Abril 2024 - Junho 2024</p>
+                    <div class="Experiencia-descricao">
+                        <p><strong>Responsabilidades:</strong></p>
+                        <ul>
+                            <li>
+                                Auxiliar na automatização das atividades da gerência de Gestão de Pessoas, incluindo programação web, consulta a banco de dados e desenvolvimento supervisionado. Desenvolver rotinas administrativas quando necessário.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
  
     <div class="Container-serviços" id="projetos">
  
@@ -182,15 +225,21 @@
  
                 <i class="fas fa-bars"></i>
  
-                <h5>Projeto de Nivelamento em C</h5>
+                <h5>Sistema de Cadastro de Usuário</h5>
  
                 <div class="Paragrafo-button">
  
-                    <p> 1. Cadastro de usuários; </p>
+                    <p><strong>As principais funcionalidades incluem: </strong></p>
+                        
+                        <p> 1. Cadastro de Usuários:</p> 
+                       <p> 2.  Exibição de Dados: </p>
+                       <p> 3.  Alteração de Dados: </p>
+                       <p> 4.  Exclusão de Usuários:</p>
+                        <p>5.  Cadastro Adicional:</p>
+                        
+                        
+                    </p>
  
-                    <p> 2. Atualização de cadastro;</p>
- 
-                    <p> 3. Exclusão de um cadastro específico;</p>
  
                     <a href="https://github.com/itsryu/Projeto-C"><button>Saiba mais</button></a>
  
@@ -207,6 +256,8 @@
                 <h5>Protótipo Dragon Ball</h5>
  
                 <div class="Paragrafo-button">
+
+                    <p><strong>As principais funcionalidades incluem: </strong></p>
  
                     <p> 1.  O usuário acessa a tela de cadastro no aplicativo.</p>
  
@@ -214,18 +265,27 @@
  
                     <p> 3.   O usuário confirma o cadastro.</p>
  
-                    <a href="https://www.figma.com/design/NdYer0HctgNcrfGp3pP0HP/i9-CORTES?node-id=0-1&t=p6oecrvMXprSkWSo-1"><button>Saiba mais</button></a>
+                    <a href="https://www.figma.com/design/NdYer0HctgNcrfGp3pP0HP/i9-CORTES?node-id=0-1&t=p6oecrvMXprSkWSo-1"></a>
  
                 </div>
                 </div>
- 
     </div>
- 
+
+
+    
+    
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="me-contate">
  
         <p>Entre em contato</p>
  
-        <a href="https://wa.me/61985123885"><button>Entre em Contato</button></a>
+        <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGMvkNkgLGxPBcJwvprRxhKvHmRNxSkMScLhqqQSzhVjSnFRbFtdZXnXrpHSbGlqMmQlgzj"><button>Entre em Contato</button></a>
  
     </div>
  
@@ -241,14 +301,14 @@
  
             <a href="https://www.linkedin.com/in/marcus-vinicius-503a32226/"><i class="fab fa-linkedin"></i></a>
  
-            <a href="https://wa.me/61985123885"><i class="fab fa-whatsapp"></i></a>
- 
             <a href="https://www.instagram.com/markinn10_/"><i class="fab fa-instagram"></i></a>
  
             <a href="https://github.com/markinn10"><i class="fab fa-github"></i></a>
+
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJfnbHCvVRTpMBZJXjKmmRZMLQDhHpddgltBKXRKtmpqBLhwTLnCGbxqfcxbXDzrxJHhczg"><i class="fab fa-envelope"></i></a>
  
         </div>
- 
+
         <p class="end">CopyRight By Marcus Vinicíus</p>
  
     </footer>
